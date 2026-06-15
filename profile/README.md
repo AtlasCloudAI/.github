@@ -19,8 +19,9 @@
 
 ## Featured Models
 
-- 🎬 **Video** — Seedance 2.0 · Kling 3 · Sora 2 · Veo 3.1 · HappyHorse 1 · Grok Imagine 1.5 · Wan 2.7
-- 🎨 **Image** — Nano Banana 2/Pro · GPT Image 2 · Flux 2 · Seedream 5
+- 🎬 **Video** — Seedance 2.1 · Seedance 2.0 · Seedance 2.0 Mini · Kling 3 · Sora 2 · Veo 3.1 · HappyHorse 1 · Grok Imagine 1.5 · Wan 2.7
+- 🎨 **Image** — Seedream 5.0 Pro · Nano Banana 2/Pro · GPT Image 2 · Flux 2 · Seedream 5
+- 🧊 **3D** — Seed3D 2.0 · Hunyuan 3D Pro · Hunyuan 3D Rapid
 - 💬 **LLM** — Claude · GPT · DeepSeek · MiniMax · Kimi · GLM · Qwen
 - 🔊 **Audio** — Grok TTS
 
@@ -40,6 +41,8 @@
 ## Prompt collections
 
 Curated prompts with real previews generated via Atlas Cloud —
+[Seedream 5.0 Pro](https://github.com/AtlasCloudAI/awesome-seedream-5-pro-prompts) ·
+[Seedance 2.1](https://github.com/AtlasCloudAI/awesome-seedance-2.1-prompts) ·
 [GPT Image 2](https://github.com/AtlasCloudAI/awesome-gpt-image2-prompt) ·
 [Seedance 2](https://github.com/AtlasCloudAI/awesome-seedance-2-prompt) ·
 [Happy Horse](https://github.com/AtlasCloudAI/awesome-happy-horse-prompt) ·
