@@ -160,9 +160,13 @@ function renderBlock(attrsRaw, catalog) {
   return lines.join("\n");
 }
 
+// Files containing this directive are never rewritten (e.g. docs that QUOTE the marker syntax).
+const SKIP_DIRECTIVE = "atlas-models-sync: skip-file";
+
 function* walkMarkdown(dir) {
   for (const entry of readdirSync(dir)) {
-    if (entry === "node_modules" || entry === ".git" || entry === "dist") continue;
+    // .atlas-shared is this repo's own checkout inside a caller's workspace — never touch it.
+    if (entry === "node_modules" || entry === ".git" || entry === "dist" || entry === ".atlas-shared") continue;
     const p = join(dir, entry);
     const st = statSync(p);
     if (st.isDirectory()) yield* walkMarkdown(p);
@@ -183,6 +187,10 @@ async function main() {
   for (const f of files) {
     const before = readFileSync(f, "utf8");
     if (!before.includes("ATLAS-MODELS:START")) continue;
+    if (before.includes(SKIP_DIRECTIVE)) {
+      console.log(`skipped (directive): ${f}`);
+      continue;
+    }
     const after = before.replace(MARKER_RE, (_, attrsRaw) => renderBlock(attrsRaw, catalog));
     if (after !== before) {
       changed++;

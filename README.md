@@ -1,3 +1,4 @@
+<!-- atlas-models-sync: skip-file — this doc quotes the marker syntax; never rewrite it -->
 # AtlasCloudAI org-wide automation
 
 Shared GitHub automation for AtlasCloudAI repositories.
@@ -49,6 +50,12 @@ jobs:
   sync:
     uses: AtlasCloudAI/.github/.github/workflows/update-models-readme.yml@main
 ```
+
+### Escape hatch
+
+A markdown file that needs to QUOTE the marker syntax without being rewritten (like this
+README) can opt out entirely by containing the literal directive `atlas-models-sync: skip-file`
+anywhere in the file (put it in an HTML comment).
 
 ### Design notes
 
