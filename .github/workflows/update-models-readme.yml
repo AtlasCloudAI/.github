@@ -1,0 +1,52 @@
+# Reusable workflow: sync the live Atlas Cloud model catalog into README marker blocks.
+#
+# Called from other AtlasCloudAI repos via:
+#
+#   jobs:
+#     sync:
+#       uses: AtlasCloudAI/.github/.github/workflows/update-models-readme.yml@main
+#
+# The caller repo only needs (a) ATLAS-MODELS marker blocks in its markdown files and
+# (b) a thin caller workflow with a cron schedule. See scripts/update-models-readme.mjs
+# for marker syntax. Uses the caller's GITHUB_TOKEN — no extra secrets required.
+name: update-models-readme
+
+on:
+  workflow_call: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout caller repository
+        uses: actions/checkout@v4
+
+      - name: Checkout shared automation (AtlasCloudAI/.github)
+        uses: actions/checkout@v4
+        with:
+          repository: AtlasCloudAI/.github
+          path: .atlas-shared
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update model catalog blocks
+        id: gen
+        run: node .atlas-shared/scripts/update-models-readme.mjs
+
+      - name: Commit & push if changed
+        run: |
+          rm -rf .atlas-shared
+          if git diff --quiet; then
+            echo "Model catalog unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name "atlas-models-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: sync live model catalog (${{ steps.gen.outputs.total }} models)"
+          git push
