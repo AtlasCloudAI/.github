@@ -19,13 +19,15 @@
 
 ## Featured Models
 
-- 🎬 **Video** — Seedance 2.5 · Seedance 2.0 · Seedance 2.0 Mini · Kling 3 · Sora 2 · Veo 3.1 · HappyHorse 1 · Grok Imagine 1.5 · Wan 2.7
+- 🎬 **Video** — Seedance 2.5 · Seedance 2.0 · Seedance 2.0 Mini · Kling 3 · Kling Video O3 · Veo 3.1 · HappyHorse 1 · Grok Imagine 1.5 · Wan 2.7
 - 🎨 **Image** — Seedream 5.0 Pro · Nano Banana 2/Pro · GPT Image 2 · Flux 2 · Seedream 5
 - 🧊 **3D** — Seed3D 2.0 · Hunyuan 3D Pro · Hunyuan 3D Rapid
 - 💬 **LLM** — Claude · GPT · DeepSeek · MiniMax · Kimi · GLM · Qwen
 - 🔊 **Audio** — Grok TTS
 
 → [Browse all 300+ models »](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=profile)
+
+🔜 **Coming soon** — Kling 4.0 · Wan 3.0. Not on Atlas Cloud yet; the newest we serve today are Kling 3 / Video O3 and Wan 2.7.
 
 ## Build with Atlas Cloud
 
@@ -36,17 +38,19 @@
 | 🎬 | [**atlas-cloud-skills**](https://github.com/AtlasCloudAI/atlas-cloud-skills) | Claude Code / Codex / Gemini CLI (Skills + 25 recipes) |
 | 🎨 | [**atlascloud_comfyui**](https://github.com/AtlasCloudAI/atlascloud_comfyui) | ComfyUI (drop-in nodes) |
 | 🔁 | [**n8n-nodes-atlascloud**](https://github.com/AtlasCloudAI/n8n-nodes-atlascloud) | n8n workflows |
-| ✨ | [**awesome-gpt-image-2-prompts**](https://github.com/AtlasCloudAI/awesome-gpt-image2-prompt) | curated prompts + real previews |
+| ✨ | [**awesome-gpt-image-2-prompts**](https://github.com/AtlasCloudAI/awesome-gpt-image-2-prompts) | curated prompts + real previews |
 
 ## Prompt collections
 
 Curated prompts with real previews generated via Atlas Cloud —
 [Seedream 5.0 Pro](https://github.com/AtlasCloudAI/awesome-seedream-5-pro-prompts) ·
-[Seedance 2.5](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts) ·
-[GPT Image 2](https://github.com/AtlasCloudAI/awesome-gpt-image2-prompt) ·
-[Seedance 2](https://github.com/AtlasCloudAI/awesome-seedance-2-prompt) ·
-[Happy Horse](https://github.com/AtlasCloudAI/awesome-happy-horse-prompt) ·
-[Gemini Omni](https://github.com/AtlasCloudAI/Awesome-Gemini-Omni-API-Prompts)
+[Seedance 2.5](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills) ·
+[Wan 3.0](https://github.com/AtlasCloudAI/awesome-wan-3.0-prompts) ·
+[MiniMax H3](https://github.com/AtlasCloudAI/awesome-minimax-h3-prompts) ·
+[GPT Image 2](https://github.com/AtlasCloudAI/awesome-gpt-image-2-prompts) ·
+[Seedance 2](https://github.com/AtlasCloudAI/awesome-seedance-2-prompts) ·
+[Happy Horse](https://github.com/AtlasCloudAI/awesome-happy-horse-prompts) ·
+[Gemini Omni](https://github.com/AtlasCloudAI/awesome-gemini-omni-prompts)
 
 ---
 
