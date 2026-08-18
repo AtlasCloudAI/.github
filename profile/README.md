@@ -19,15 +19,13 @@
 
 ## Featured Models
 
-- 🎬 **Video** — Seedance 2.5 · Seedance 2.0 · Seedance 2.0 Mini · Kling 4.0 *(soon)* · Kling 3 · Kling Video O3 · Veo 3.1 · HappyHorse 1 · Grok Imagine 1.5 · Wan 3.0 *(soon)* · Wan 2.7
+- 🎬 **Video** — Seedance 2.5 · Seedance 2.0 · Seedance 2.0 Mini · Kling 4.0 · Kling 3 · Kling Video O3 · Veo 3.1 · HappyHorse 1 · Grok Imagine 1.5 · Wan 3.0 · Wan 2.7
 - 🎨 **Image** — Seedream 5.0 Pro · Nano Banana 2/Pro · GPT Image 2 · Flux 2 · Seedream 5
 - 🧊 **3D** — Seed3D 2.0 · Hunyuan 3D Pro · Hunyuan 3D Rapid
 - 💬 **LLM** — Claude · GPT · DeepSeek · MiniMax · Kimi · GLM · Qwen
 - 🔊 **Audio** — Grok TTS
 
 → [Browse all 300+ models »](https://www.atlascloud.ai/models?utm_source=github&utm_campaign=profile)
-
-<sub>*(soon)* — coming to Atlas Cloud, not callable yet. Everything else in the list is live today.</sub>
 
 ## Build with Atlas Cloud
 
